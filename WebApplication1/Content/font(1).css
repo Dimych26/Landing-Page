@@ -1,0 +1,204 @@
+.topnad {
+    font-family: 'Gilroy';
+    font-weight: 900;
+    font-size: 1.5vw;
+    color: aliceblue;
+-webkit-text-stroke: 0.5px blue;
+    
+}
+.ogo {
+    font-family: 'a_FuturaRoundDemi';
+    font-weight: 900;
+    font-size: 2vw;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+.ts {
+    width: 100%;
+    font-family: 'Comic Sans MS';
+    font-weight: 900;
+    font-size: 3vh;
+    color: #f0efe7;
+}
+.f {
+    color: #000;
+    text-align: center;
+    font-family: 'a_FuturaRoundDemi';
+    font-size: 2.5vw;
+    font-weight: 900;
+    /*-webkit-text-stroke: 0.5px #000000;*/
+}
+
+.b {
+    color: #000;
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    font-size: 2vw;
+    font-weight: 900;
+    /*-webkit-text-stroke: 0.5px #000000;*/
+}
+.pled {
+    color: #f0efe7;
+}
+.raz, .dva, .tri{
+    font-family: 'a_FuturaRoundDemi';
+    font-size: 2vw;
+    font-weight: 900;
+}
+.name, .tsena, .basket, .basket11 {
+    font-family: 'a_FuturaRoundDemi';
+    font-size: 1.5vw;
+    font-weight: 900;
+}
+.opis1 {
+    font-family: 'Comic Sans MS';
+    font-weight: 900;
+    font-size: 2vw;
+    color: #000;
+    text-align:center;
+height: 8vw;
+
+}
+.right label {
+font-family: 'a_FuturaRoundDemi';
+    font-size: 1.6vw;
+    color: 
+
+aliceblue;
+}
+.big {
+    font-size: 3vw;
+    font-weight: 900;
+    color:white;
+font-family: 'a_FuturaRoundDemi';
+}
+.small {
+    font-weight: 900;
+    font-size: 1.5vw;
+    color: white;
+font-family: 'a_FuturaRoundDemi';
+}
+#verny label {
+    font-weight: 900;
+    font-size: 2vw;
+    font-family: 'Comic Sans MS';
+}
+.d {
+    font-family: 'a_FuturaRoundDemi';
+    font-size: 2vw;
+    text-shadow: 4px 4px 4px #aaa;
+}
+.c {
+    font-family: 'a_FuturaRoundDemi';
+    font-weight: 900;
+    font-size: 1.5vw;
+    margin-top: 4%;
+    height: 5vw;
+}
+.b1 {
+    font-family: 'Comic Sans MS';
+    -webkit-text-stroke: 1px #090601;
+    font-size: 3vw;
+    font-weight: 900;
+    color: #f0efe7;
+}
+@font-face {
+    font-family: 'a_FuturaRoundDemi';
+    src: url("../fonts/a_FuturaRoundDemi_2279.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-BoldItalic.eot');
+    src: local('../fonts/Gilroy Bold Italic'), local('../fonts/Gilroy-BoldItalic'),
+        url('../fonts/Gilroy-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-BoldItalic.woff') format('woff'),
+        url('../fonts/Gilroy-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+.bol {
+    font-family: 'a_FuturaRoundDemi';
+    font-size: 1.3vw;
+    font-weight: 900;
+    color: #090601;
+}
+.mal {
+    font-family: 'a_FuturaRoundDemi';
+    font-size: 1.3vw;
+    font-weight: 900;
+    color: lime;
+    text-align: start;
+}
+.sloy1 {
+    color: white;
+    font-family: 'a_FuturaRoundDemi';
+    font-weight: 900;
+    font-size: 1.2vw;
+}
+.i1i, .i2i, .i3i {
+    color: white;
+    font-family: 'a_FuturaRoundDemi';
+    font-weight: 900;
+    font-size: 1vw;
+}
+#verny label {
+    color: black;
+    text-align: center;
+    font-family: 'a_FuturaRoundDemi';
+    font-size: 1.5vw;
+    font-weight: 300;
+    text-decoration: none;
+    margin: 0 auto;
+cursor: pointer;
+}
+.input3 {
+    font-size: 1vw;
+}
+.g {
+    font-size: 3vw;
+    color: aliceblue;
+    text-align: center;
+    -webkit-text-stroke: 0.1vh black;
+    font-family: 'a_FuturaRoundDemi';
+    font-size: 2.5vw;
+    text-shadow: 4px 4px 4px #aaa;
+}
+.glek, .glek1, .glek2 {
+    text-align: center;
+    vertical-align: central;
+    font-family: 'Comic Sans MS';
+    font-size: 170%;
+    font-weight: 900;
+    text-decoration: none;
+    border: 4px solid #000000;
+    border-radius: 30%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.e {
+    font-family: 'Comic Sans MS';
+    font-size: 220%;
+    font-weight: 900;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.namee {
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    font-size: 420%;
+    font-weight: 900;
+    text-decoration: none;
+}
+.g {
+    font-size: 3vw;
+    color: aliceblue;
+    text-align: center;
+    -webkit-text-stroke: 0.1vh black;
+    font-family: 'a_FuturaRoundDemi';
+    font-size: 2.5vw;
+    text-shadow: 4px 4px 4px #aaa;
+}

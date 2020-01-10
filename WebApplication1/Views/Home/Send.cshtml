@@ -1,0 +1,67 @@
+﻿@*@model DAL.Entities.*@
+@{
+    ViewBag.Title = "Send";
+}
+
+<h2>Send</h2>
+<div class="form-control">
+    <form class="formaa" method="get">
+
+
+        <label for="form_sname">ФИО</label>
+        <input type="text" id="User_name" />
+        @*@Html.ValidationMessageFor(model => model.Name)*@
+
+        <label for="form_phone">Почта</label>
+        <input type="text" id="email" />
+
+
+        <label for="form_phone">Телефон</label>
+        <input type="text" id="phone" />
+
+
+        <label for="form_phone">Город</label>
+        <input type="text" id="City" />
+
+        <label for="form_phone">Отделение Новой Почты</label>
+        <input type="text" id="MailNumber" />
+
+        <label for="form_phone">Способ оплаты</label>
+        <input type="text" id="payment" />
+
+        <label for="form_phone">Вам перезванивать?</label>
+        <input type="checkbox" id="checkbox" />
+
+    </form>
+    <input type="button" class="btnom" name="Отправить" onclick="MakeProduct()" />
+</div>
+<script type="text/javascript">
+    function MakeProduct() {
+        var Mail = {
+            Name: $('#User_name').val(),
+            Email: $('#email').val(),
+            Phone: $('#phone').val(),
+            MailNumber: $('#MailNumber').val(),
+            Payment: $('#payment').val(),
+            City: $('#City').val(),
+            CallBack: $('#checkbox').val(),
+            
+        }
+        //alert(JSON.stringify(Mail));
+        $.ajax({
+            url: '/Home/Send',// '/Product/OnPostCreate/',
+            type: 'POST',
+
+            dataType: 'JSON',
+            data: JSON.stringify(Mail),
+            contentType: "application/json; charset=utf-8",
+           
+            success: function (data) {
+                alert("Добавлено")
+            },
+            error: function (error) {
+                alert(error.responseText);
+            }
+        });
+    }
+</script>

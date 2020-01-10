@@ -1,0 +1,372 @@
+@media screen and (min-device-width: 320px)and (max-device-width: 812px) {
+    .Uslugi, .Uslugi1 {
+        height: 240vw;
+        align-items: center;
+        justify-content: center
+    }
+.slides li:nth-child(1), .slides li:nth-child(2)  {
+
+   
+    background-size: 149% 100%;
+
+}
+    .logo {
+        width: 80%;
+    }
+
+    .sticky .nad {
+        transform: translate(0,27px);
+    }
+.ok
+{
+height:auto;
+}
+    .chto {
+        height: auto;
+    }
+
+    .nada {
+        ;
+        width: 80%;
+    }
+
+    .obsh {
+        flex-direction: column;
+    }
+
+    .potomu {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+
+    .ima {
+        height: 31vw;
+        width: 31vw;
+    }
+
+    .man, .man1 {
+        height: 31vw;
+        width: 31vw;
+    }
+
+    .input3 {
+        font-size: 2.7vw;
+        height: 7.5vw;
+        width: 64vw;
+    }
+
+    .input6 {
+        height: 20.5vw;
+        width: 64vw;
+    }
+
+    .f {
+        font-size: 11vw;
+        padding-top: 6%;
+        width: auto;
+    }
+
+    .d {
+        font-size: 5.5vw;
+    }
+
+    .c {
+        font-size: 3.5vw;
+    }
+
+    .inf1 {
+        width: 50%;
+        margin-top: 10%;
+    }
+
+    .slides li {
+        height: 156vw;
+background-size: 149% 100%;
+    }
+
+    .slides, .slides::after {
+height: auto;
+    }
+
+    .header {
+      height: 156vw;
+background-size: 149% 100%;
+    }
+
+    .sky, .sky.sticky {
+        height: auto;
+        justify-content: normal;
+    }
+
+    .mal {
+        font-size: 4.3vw;
+    }
+
+    .kartinka {
+width: 76vw;
+height: 96vw;
+    }
+
+    .kartinka1 {
+        width: 50vw;
+        height: 11vw;
+    }
+
+    .sticky .logo {
+        display: none
+    }
+
+    .topnad {
+        font-size: 4vw;
+    }
+
+    .nad {
+      width: 100%;
+margin-top: 3%;
+background:
+crimson;
+    }
+
+    .podtop {
+        margin-top: 79.7%;
+        width: 100%;
+        height: auto;
+        align-items: centre;
+    }
+
+    .sky.sticky {
+        height: 20vw;
+    }
+
+    .big {
+        font-size: 7vw;
+height: 22vw;
+margin-top: -1%;
+    }
+
+    .small {
+        font-size: 4vw;
+height: 24vw;
+    }
+    .select2-container .select2-selection--single {
+        box-sizing: border-box;
+        cursor: pointer;
+        display: block;
+        height: 7.5vw;
+        user-select: none;
+        -webkit-user-select: none
+    }
+    .one {
+        width: 62%;
+height: 14vw;
+        font-size: 5vw;
+    }
+
+    #verny label {
+        font-size: 3.5vw;
+    }
+
+    #verny {
+        display: none;
+    }
+
+    .top {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .prod, .opiss {
+        width: auto
+    }
+
+    .Promegnost1 {
+        height: 31vw;
+        background: url(../images/830438998_vyazanyj-pled-.jpg);
+    }
+
+    .b {
+        color: #000;
+        text-align: start;
+        font-family: 'Comic Sans MS';
+        font-size: 5vw;
+        font-weight: 900;
+        -webkit-text-stroke: 0.5px #000000;
+    }
+
+    .dva {
+        width: 71%;
+height:auto;
+    }
+
+    .m {
+        width: 68vw;
+        height: 74vw;
+    }
+
+    .opis1 {
+        font-size: 5vw;
+height: 22vw;
+    }
+
+    .raz {
+        margin-top: 12%;
+        font-size: 4vw;
+        width: 70%;
+    }
+
+    .bol {
+        font-size: 5.3vw;
+    }
+
+    .potomu1 {
+        flex-direction: column;
+    }
+
+    .pun1 {
+        height: 27vw;
+        margin-top: 15%;
+        justify-content: space-between;
+    }
+
+    .pun {
+        width: auto;
+        margin-top: 4%;
+    }
+
+    .nom {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .order1, .order, .order2, .fio {
+        height: auto;
+    }
+
+    #select_item1, #select_item {
+        height: 7.5vw;
+        width: 64vw;
+    }
+
+    .lin {
+        width: 13vw;
+        height: 15vw;
+    }
+
+    .text, .forma {
+        width: 64vw;
+        height: auto;
+    }
+
+    .lll {
+        height: 8vw;
+        width: 8vw;
+    }
+
+    .tele, .tele1 {
+        height: 76vw;
+        color: white;
+        font-size: 4vw;
+    }
+
+    .sv {
+        height: 68vw;
+    }
+
+    .inp {
+        height: 9.5vw;
+        width: 51vw;
+        font-size: 4vw;
+    }
+
+    .inp2 {
+        height: 31vw;
+        width: 51vw;
+        font-size: 4vw;
+    }
+
+    .bu {
+        height: 7.5vw;
+        width: 38vw;
+        font-size: 4vw;
+    }
+
+    .kart {
+        display: none;
+    }
+
+    .b1 {
+        font-size: 6vw;
+    }
+
+    .sloy1 {
+        font-size: 2.6vw;
+    }
+
+    .i2i {
+        width: 17%;
+        height: 11vw;
+        font-size: 2vw;
+    }
+
+    .i1i {
+        height: 6.7vw;
+        width: 16%;
+        font-size: 2vw;
+    }
+
+    .i3i {
+        font-size: 4vw;
+        width: auto;
+    }
+    .sloy3 img {
+        height: 5vw;
+        width: 5vw;
+    }
+    .ogo {
+        font-size: 3vw;
+    }
+
+    .cont {
+        height: auto;
+        align-items: center;
+    }
+
+    .pled {
+        height: auto;
+        align-items: center;
+    }
+
+    .g {
+        font-size: 6vw;
+    }
+
+    .right label {
+        font-size: 4.4vw;
+        margin-top: 2%;
+    }
+
+    .right {
+        width: 75%;
+        height: auto;
+    }
+
+    .ot {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .basket {
+        width: 37vw;
+        height: 8vw;
+        font-size: 4.5vw;
+    }
+
+    .vlogo {
+        width: 50vw;
+    }
+    .logo1 {
+        width: auto;
+    }
+    
+}

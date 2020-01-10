@@ -1,0 +1,134 @@
+﻿
+@{
+    ViewBag.Title = "ListOfTown";
+}
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@Scripts.Render("~/scripts/jquery.unobtrusive-ajax.js")
+@Scripts.Render("~/scripts/jquery-3.3.1.js")
+<h2>ListOfTown</h2>
+
+<link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+<div>
+    <div id="ShowWeather" >
+        <select id="select_item1"style="width:150px" onchange="ListOfWarehouse()">
+            @*<option selected>Выберите городаааааааааааааааааааааааааааааааааааааааааааа</option>*@
+        </select>
+    </div>
+    <div id="ShowWeather1"  >
+        <select id="select_item" style="width:150px" >
+            @*<option selected  >Выберите отделенияяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяя</option>*@
+        </select>
+    </div>
+</div>
+
+
+<script>
+    var city = '';
+    function ListOfWarehouse() {
+        city = $("#select_item1 option:selected").text();
+        
+        $.ajax({
+            url: 'https://api.novaposhta.ua/v2.0/json/AddressGeneral/getWarehouses',
+            dataType: 'jsonp',//снимаем ограничения браузера при отправке ответов JSON из разных доменов с клиента
+            type: 'POST',
+            headers: {
+                'Access-Control-Allow-Origin': '*'// разрешаем браузеру запрашивать код из любого источника
+            },
+            cors: true,
+            secure: true,
+            data: {
+                "modelName": "AddressGeneral",
+                "calledMethod": "getWarehouses",
+                "methodProperties": {
+                    "CityName": city,
+                    "Language": "ru"
+                },
+                "apiKey": "8a3aa2920fec9edfadca522d38bc8f88"
+            },
+            contentType: "application/json; charset=utf-8",
+            success: function (data) { //функция для вывода ответа запроса
+                 console.log(data);
+                var response = '<option>' + "</option>";
+                $.each(data.data, function (index, val) {
+                   
+                    response += '<option>' + val.Description + "</option>";
+
+                });
+                $('#select_item').html(response);
+                // $('#select_item').html('<p><b>' + 'Not Found' + "</b></p>");
+
+            },
+            error: function () { //в случае ошибки запроса, выводим сообщение
+                $('#ShowWeather').html('<p><b>' + 'Not Found' + "</b></p>");
+            }
+
+        })
+    }
+    function ListOfTown() {
+        $.ajax({
+            url: 'https://api.novaposhta.ua/v2.0/json/Address/getCities',
+            dataType: 'jsonp',//снимаем ограничения браузера при отправке ответов JSON из разных доменов с клиента
+            type: 'POST',
+            headers: {
+                'Access-Control-Allow-Origin': '*'// разрешаем браузеру запрашивать код из любого источника
+            },
+            cors: true,
+            secure: true,
+            data: {
+              
+                "modelName": "Address",
+                "calledMethod": "getCities",
+                "methodProperties": {
+                  
+                },
+                "apiKey": "8a3aa2920fec9edfadca522d38bc8f88"
+            
+
+               
+               
+            },
+            contentType: "application/json; charset=utf-8",
+            success: function (data) { //функция для вывода ответа запроса
+                // console.log(data);
+                var response = '<option>' + "</option>";
+                var source = data.data[0].Addresses;
+
+                $.each(data.data, function (index, val) {
+
+                        response += '<option>' + val.Description + "</option>";
+                  
+                    });
+                $('#select_item1').html(response);
+                
+
+            },
+            error: function () { //в случае ошибки запроса, выводим сообщение
+                $('#ShowWeather').html('<p><b>' + 'Not Found' + "</b></p>");
+            }
+           
+        })
+        
+    }
+    jQuery(document).ready(function ($) {
+        $("#select_item").select2({
+            placeholder: "Виберіть відділення",
+            selectOnClose:true
+           // allowClear: true
+        });
+        $("#select_item1").select2({
+            placeholder: "Виберіть місто",
+            selectOnClose: true,
+           
+            //allowClear: true
+        });
+        $("#select_item").empty();
+        $("#select_item1").empty();
+       
+        ListOfTown();
+        
+    })
+
+</script>
